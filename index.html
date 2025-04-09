@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Babdya's cake shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="header-section">
+    <h1 class="text-center mb-4">Welcome to Babdya's Cake Shop!</h1>
+    <div class="row">
+      <!-- Chocolate Cake Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="static\images\chocolate.jpg" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Cake</h5>
+            <form action="/order" method="POST">
+              <input type="hidden" name="cake" value="Chocolate Cake">
+              <div class="mb-3">
+                <label for="quantity_chocolate" class="form-label">Quantity</label>
+                <input type="number" name="quantity" id="quantity_chocolate" class="form-control" placeholder="Enter quantity" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Proceed to Order</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Vanilla Cake Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="static/images/vanilla.jpg" class="card-img-top" alt="Vanilla Cake">
+          <div class="card-body">
+            <h5 class="card-title">Vanilla Cake</h5>
+            <form action="/order" method="POST">
+              <input type="hidden" name="cake" value="Vanilla Cake">
+              <div class="mb-3">
+                <label for="quantity_vanilla" class="form-label">Quantity</label>
+                <input type="number" name="quantity" id="quantity_vanilla" class="form-control" placeholder="Enter quantity" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Proceed to Order</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Red Velvet Cake Card -->
+      <div class="col-md-4 mb-4" >
+        <div class="card h-100">
+          <img src="static\images\red velvet.jpg" class="card-img-top" alt="Red Velvet Cake">
+          <div class="card-body">
+            <h5 class="card-title">Red Velvet Cake</h5>
+            <form action="/order" method="POST">
+              <input type="hidden" name="cake" value="Red Velvet Cake">
+              <div class="mb-3">
+                <label for="quantity_redvelvet" class="form-label">Quantity</label>
+                <input type="number" name="quantity" id="quantity_redvelvet" class="form-control" placeholder="Enter quantity" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Proceed to Order</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
